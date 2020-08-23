@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin="anonymous">
     <title>Todos</title>
 </head>
 <body>
-    <h1>TODOS PAGE</h1>
-    @foreach($todos as $todo)
+    <h1 class="text-center">TODOS PAGE</h1>
 
-    <li>
-        {{ $todo->name}}
+    <ul>
+            @foreach($todos as $todo)
 
-    @endforeach
+                <li>
+                    {{ $todo->name}}
+                </li>
 
+            @endforeach
+    </ul>
     
 
 </body>
